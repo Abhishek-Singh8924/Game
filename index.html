@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Toc Toe</title>
+    <style>
+        table {
+            width: 450px;
+            height: 450px;
+            margin: 20px auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: aqua;
+        }
+        
+        tr {
+            width: 450px;
+            height: 150px;
+        }
+        
+        td,
+        img {
+            height: 150px;
+            width: 150px;
+        }
+        
+        table,
+        tr,
+        td {
+            border: 5px solid teal;
+            border-collapse: collapse;
+        }
+        
+        button {
+            height: 40px;
+            width: 300px;
+            border-radius: 15px;
+            background: chartreuse;
+            font-size: 30px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body id="win">
+    <h1 id="hint">Tic Toc Toe</h1>
+    <audio id="sound" src="sound1.wav"></audio>
+    <center><button onclick="restartgame()"> Reset Game </button></center>
+    <table>
+        <tr>
+            <td onclick="ontap(this,0)"></td>
+            <td onclick="ontap(this,1)"></td>
+            <td onclick="ontap(this,2)"></td>
+        </tr>
+        <tr>
+            <td onclick="ontap(this,3)"></td>
+            <td onclick="ontap(this,4)"></td>
+            <td onclick="ontap(this,5)"></td>
+        </tr>
+        <tr>
+            <td onclick="ontap(this,6)"></td>
+            <td onclick="ontap(this,7)"></td>
+            <td onclick="ontap(this,8)"></td>
+        </tr>
+    </table>
+    <script src="js11.js"></script>
+</body>
+
+</html>
